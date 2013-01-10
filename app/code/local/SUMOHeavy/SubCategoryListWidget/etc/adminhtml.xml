@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SUMOHeavy_SubCategoryListWidget
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.sumoheavy.com/LICENSE.txt
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_SubCategoryListWidget
+ * @copyright  Copyright 2013 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license    http://www.sumoheavy.com/LICENSE.txt
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sumoheavy_subcategorylistwidget translate="title" module="sumoheavy_subcategorylistwidget">
+                                        <title>Subcategory List Widget</title>
+                                        <sort_order>60</sort_order>
+                                    </sumoheavy_subcategorylistwidget>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

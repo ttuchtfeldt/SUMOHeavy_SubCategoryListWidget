@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SUMOHeavy_SubCategoryListWidget
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.sumoheavy.com/LICENSE.txt
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_SubCategoryListWidget
+ * @copyright  Copyright 2013 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license    http://www.sumoheavy.com/LICENSE.txt
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+-->
+<config>
+    <modules>
+        <SUMOHeavy_SubCategoryListWidget>
+            <version>0.1.0</version>
+        </SUMOHeavy_SubCategoryListWidget>
+    </modules>
+
+    <global>
+        <blocks>
+            <sumoheavy_subcategorylistwidget>
+                <class>SUMOHeavy_SubCategoryListWidget_Block</class>
+            </sumoheavy_subcategorylistwidget>
+        </blocks>
+        <helpers>
+            <sumoheavy_subcategorylistwidget>
+                <class>SUMOHeavy_SubCategoryListWidget_Helper</class>
+            </sumoheavy_subcategorylistwidget>
+        </helpers>
+        <resources>
+            <sumoheavy_subcategorylistwidget_setup>
+                <setup>
+                    <module>SUMOHeavy_SubCategoryListWidget</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </sumoheavy_subcategorylistwidget_setup>
+            <sumoheavy_subcategorylistwidget_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </sumoheavy_subcategorylistwidget_write>
+            <sumoheavy_subcategorylistwidget_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </sumoheavy_subcategorylistwidget_read>
+        </resources>
+    </global>
+
+    <default>
+        <sumoheavy_subcategorylistwidget>
+            <settings>
+                <image_h>135</image_h>
+                <image_w>135</image_w>
+            </settings>
+        </sumoheavy_subcategorylistwidget>
+    </default>
+</config>

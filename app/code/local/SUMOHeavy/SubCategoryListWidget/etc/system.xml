@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SUMOHeavy_SubCategoryListWidget
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.sumoheavy.com/LICENSE.txt
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_SubCategoryListWidget
+ * @copyright  Copyright 2013 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license    http://www.sumoheavy.com/LICENSE.txt
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+-->
+<config>
+    <tabs>
+        <sumoheavy translate="label" module="sumoheavy_subcategorylistwidget">
+            <label>SUMO Heavy</label>
+            <sort_order>999999999</sort_order>
+        </sumoheavy>
+    </tabs>
+    <sections>
+        <sumoheavy_subcategorylistwidget translate="label" module="sumoheavy_subcategorylistwidget">
+            <label>Subcategory List Widget</label>
+            <tab>sumoheavy</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Settings</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <fields>
+                        <image_h translate="label">
+                            <label>Category Image Height</label>
+                            <comment>Numbers only! Will be used as the pixel height.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                        </image_h>
+                        <image_w translate="label">
+                            <label>Category Image Width</label>
+                            <comment>Numbers only! Will be used as the pixel width.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                        </image_w>
+                    </fields>
+                </settings>
+            </groups>
+        </sumoheavy_subcategorylistwidget>
+    </sections>
+</config>

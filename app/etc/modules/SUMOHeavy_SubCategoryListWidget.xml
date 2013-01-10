@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * SUMOHeavy_SubCategoryListWidget
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.sumoheavy.com/LICENSE.txt
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_SubCategoryListWidget
+ * @copyright  Copyright (c) 2013 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license    http://www.sumoheavy.com/LICENSE.txt
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+-->
+<config>
+  <modules>
+    <SUMOHeavy_SubCategoryListWidget>
+      <active>true</active>
+      <codePool>local</codePool>
+    </SUMOHeavy_SubCategoryListWidget>
+    <depends>
+        <Mage_Cms />
+    </depends>
+  </modules>
+</config>
