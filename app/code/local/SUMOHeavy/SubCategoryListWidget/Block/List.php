@@ -19,10 +19,30 @@ class SUMOHeavy_SubCategoryListWidget_Block_List
     extends Mage_Core_Block_Template
     implements Mage_Widget_Block_Interface
 {
+    /**
+     * List of subcategories
+     *
+     * @var array
+     */
     protected $_scList = array();
+
+    /**
+     * Category image height
+     *
+     * @var int
+     */
     protected $_imgH = 135;
+
+    /**
+     * Category image width
+     *
+     * @var int
+     */
     protected $_imgW = 135;
 
+    /**
+     * Construct
+     */
     protected function _construct()
     {
         $this->_imgH = Mage::getStoreConfig(
@@ -34,6 +54,12 @@ class SUMOHeavy_SubCategoryListWidget_Block_List
         parent::_construct();
     }
 
+    /**
+     * Gets a category's image
+     *
+     * @param $category
+     * @return string
+     */
     protected function _getCategoryImage($category)
     {
         $src = '';
@@ -104,4 +130,3 @@ class SUMOHeavy_SubCategoryListWidget_Block_List
     }
 
 }
-

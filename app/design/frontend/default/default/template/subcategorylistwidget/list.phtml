@@ -1,0 +1,47 @@
+<?php
+/**
+ * SUMOHeavy_SubCategoryListWidget
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.sumoheavy.com/LICENSE.txt
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_SubCategoryListWidget
+ * @copyright  Copyright 2013 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license    http://www.sumoheavy.com/LICENSE.txt
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+$_helper = Mage::getModel('catalog/category');
+?>
+<?php if(!$subcategories): ?>
+<p class="note-msg"><?php echo $this->__('No subcategories were found.') ?></p>
+<?php else: ?>
+<div class="category-products">
+    <?php // Grid Mode ?>
+    <?php $_collectionSize = count($subcategories) ?>
+    <?php $_columnCount = 5; ?>
+    <?php $i=0; foreach ($subcategories as $_category): ?>
+    <?php if ($i++%$_columnCount==0): ?>
+        <ul class="products-grid">
+        <?php endif ?>
+    <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+        <?php if ($_category['img']) : ?>
+        <a href="<?php echo $_category['url'] ?>" title="<?php echo $this->stripTags($_category['name'], null, true) ?>" class="product-image">
+            <img src="<?php echo $_category['img'] ?>" alt="<?php echo $this->stripTags($_category['name'], null, true) ?>" title="<?php echo $this->stripTags($_category['name'], null, true) ?>" width="<?php echo $_category['img_w']; ?>" height="<?php echo $_category['img_h']; ?>" />
+        </a>
+        <?php endif ?>
+        <h2 class="product-name"><a href="<?php echo $_category['url'] ?>" title="<?php echo $this->stripTags($_category['name'], null, true) ?>"><?php echo $_category['name'] ?></a></h2>
+    </li>
+    <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
+        </ul>
+        <?php endif ?>
+    <?php endforeach ?>
+
+    <script type="text/javascript">decorateGeneric($$('.category-products ul.products-grid'), ['odd','even','first','last'])</script>
+</div>
+<?php endif; ?>
+

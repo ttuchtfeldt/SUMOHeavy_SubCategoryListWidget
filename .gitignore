@@ -1,0 +1,9 @@
+# Editors
+.idea
+.settings
+.project
+.buildpath
+
+# Operating System
+.DS_Store
+Thumbs.db
