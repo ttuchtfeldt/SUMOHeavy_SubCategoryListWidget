@@ -11,8 +11,8 @@ Installation
 ===========
 
 1. Download the module .zip file
-3. Copy the folder to the proper location in your magento installation
-3. Enjoy!
+1. Copy the folder to the proper location in your magento installation
+1. Enjoy!
 
 Changes
 ===========
