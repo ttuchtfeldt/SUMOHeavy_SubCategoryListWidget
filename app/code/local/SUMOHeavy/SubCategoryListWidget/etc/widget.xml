@@ -19,16 +19,25 @@
 -->
 <widgets>
 
-    <subcategorylistwidget type="sumoheavy_subcategorylistwidget/list">
+    <subcategorylistwidget type="sumoheavy_subcategorylistwidget/category_widget_list">
         <name>SUMO Heavy: List Subcategories</name>
         <description>This is a widget that pulls the subcategories of a given category.</description>
         <parameters>
-            <category_id>
-                <label>Category ID (Parent)</label>
+            <category_path translate="label">
                 <visible>1</visible>
                 <required>1</required>
-                <type>text</type>
-            </category_id>
+                <label>Parent Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>adminhtml/catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Parent Category</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>0</sort_order>
+            </category_path>
             <template>
                 <visible>0</visible>
                 <value>subcategorylistwidget/list.phtml</value>
