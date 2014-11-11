@@ -22,9 +22,9 @@
     <SUMOHeavy_SubCategoryListWidget>
       <active>true</active>
       <codePool>local</codePool>
-    </SUMOHeavy_SubCategoryListWidget>
     <depends>
-        <Mage_Cms />
+        <Mage_Cms/>
     </depends>
+    </SUMOHeavy_SubCategoryListWidget>
   </modules>
 </config>
